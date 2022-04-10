@@ -41,11 +41,13 @@ exports.minio = {
 ```js
 // {app_root}/config/config.default.js
 config.minio = {
-  endPoint: "127.0.0.1",
-  port: parseInt(9000),
-  useSSL: false,
-  accessKey: "accessKey",
-  secretKey: "secretKey"
+  client: {
+    endPoint: "127.0.0.1",
+    port: parseInt(9000),
+    useSSL: false,
+    accessKey: "accessKey",
+    secretKey: "secretKey"
+  }
 };
 ```
 
